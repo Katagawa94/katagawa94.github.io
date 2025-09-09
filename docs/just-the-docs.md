@@ -1,6 +1,6 @@
 ---
 title: Just the docs
-laylout: default
+layout: default
 ---
 
 # Configuring Just the Docs (Jekyll)

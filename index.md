@@ -1,6 +1,7 @@
 ---
 title: Home
-layout: home
+layout: default
+nav_order: 1
 ---
 
 Github pages processes markdown using static websites generators

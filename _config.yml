@@ -1,5 +1,5 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: a template site
+description: A sick template. wow.
 theme: just-the-docs
 logo: "/assets/images/taxman.png"
 
@@ -7,6 +7,3 @@ favicon_ico: "/assets/images/favicon.ico"
 color_scheme: dark
 
 url: https://katagawa94.github.io
-
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template

@@ -1,7 +1,7 @@
 ---
 title: Devops with Azure
 layout: default
-partent: Azure
+parent: Azure
 ---
 
 # Azure DevOps at a glance

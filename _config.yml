@@ -1,7 +1,7 @@
-title: a template site
+title: DevOps documentation
 description: A sick template. wow.
 theme: just-the-docs
-logo: "/assets/images/water.png"
+logo: "/assets/images/water.svg"
 
 favicon_ico: "/assets/images/favicon.ico"
 color_scheme: dark

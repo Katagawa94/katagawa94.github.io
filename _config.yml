@@ -4,6 +4,6 @@ theme: just-the-docs
 logo: "/assets/images/water.png"
 
 favicon_ico: "/assets/images/favicon.ico"
-color_scheme: dark
+color_scheme: light
 
 url: https://katagawa94.github.io

@@ -12,8 +12,6 @@ Microsoft Azure is a comprehensive cloud computing platform that provides a wide
 - **Scalability**: Resources can be scaled up or down based on demand
 - **Global Reach**: Data centers in multiple regions worldwide
 - **Security**: Enterprise-grade security and compliance certifications
-- **Cost Optimization**: Pay-only-for-what-you-use pricing model
-- **Integration**: Seamless integration with Microsoft products and services
 
 ## Tenants
 
@@ -40,13 +38,6 @@ Azure subscriptions are logical containers that link Azure resources to billing 
 - **Access Control**: RBAC (Role-Based Access Control) can be applied at subscription level
 - **Resource Limits**: Each subscription has default limits and quotas for resources
 - **Policy Application**: Azure policies can be enforced at subscription level
-- **Cost Management**: Enables tracking and controlling costs per subscription
-
-### Subscription Types:
-- **Free Tier**: Limited resources for learning and testing
-- **Pay-As-You-Go**: Standard subscription with usage-based billing
-- **Enterprise Agreement**: Volume licensing for large organizations
-- **Dev/Test**: Discounted rates for development and testing environments
 
 ## Resources
 

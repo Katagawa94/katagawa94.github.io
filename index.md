@@ -4,44 +4,44 @@ layout: default
 nav_order: 1
 ---
 
-Overview
-- DevOps
-    - Container
-    - Continuous Integration
-    - Continuous Delivery
-    - Tracing
-- DevOps in COMPANY
+# Overview/ TODO
 
-Tools
-- General tools
-    - Teams
-    - Outlook
-    - Interflex
-    - Sharepoint
+## DevOps
+* Container
+* Continuous Integration
+* Continuous Delivery
+* Tracing
 
-- Developer tools
-    - Jira
-        - Scrum
-            - Backlog
-            - Daily
-            - Review
-            - Retro
-    - Confluence
-    - Github
-        - Actions
-    - Datadog
-    - Bamboo
-    - Bitbucket
-    - Azure
-        - Tenants
-        - Subscriptions
-        - Groups
-        - Resources
-            - Terraform
-                - Cloud Development Kit Terraform (CDKTF)
-            - App Registration
-            - Key Vaults
-            - SPA
+## Tools
+### General tools
+* Teams
+* Outlook
+* Interflex
+* Sharepoint
 
-Guidelines
+### Developer tools
+* Jira
+    * Scrum
+        * Backlog
+        * Daily
+        * Review
+        * Retro
+* Confluence
+* Github
+    * Actions
+* Datadog
+* Bamboo
+* Bitbucket
+* Azure
+    * Tenants
+    * Subscriptions
+    * Groups
+    * Resources
+        * Terraform
+            * Cloud Development Kit Terraform (CDKTF)
+        * App Registration
+        * Key Vaults
+        * SPA
+
+## Guidelines
     

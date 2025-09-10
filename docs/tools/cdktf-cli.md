@@ -1,6 +1,6 @@
 ---
 title: CDKTF CLI
-default: default
+layout: default
 parent: Tools
 ---
 

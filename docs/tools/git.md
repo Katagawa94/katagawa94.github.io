@@ -1,6 +1,6 @@
 ---
 title: Git
-default: default
+layout: default
 parent: Tools
 ---
 

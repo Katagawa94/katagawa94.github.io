@@ -1,3 +1,8 @@
+--- 
+title: terraform
+layout: default
+parent: azure-overview
+---
 ## Terraform
 
 Terraform is an open-source Infrastructure as Code (IaC) tool that allows you to define and provision Azure infrastructure using declarative configuration files written in HashiCorp Configuration Language (HCL) or other sources.

@@ -1,3 +1,8 @@
+--- 
+title: azure-overview
+layout: default
+---
+
 # Azure
 
 Microsoft Azure is a comprehensive cloud computing platform that provides a wide range of services including computing, analytics, storage, and networking. Azure enables organizations to build, deploy, and manage applications through Microsoft's global network of data centers.
@@ -50,6 +55,7 @@ Azure resources are the individual services and components that you create and m
 
 - Web Applications
 - Key Vaults
+- App Registrations
 
 ### Resource Management:
 - **Resource Groups**: Logical containers for related resources

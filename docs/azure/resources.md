@@ -1,3 +1,11 @@
+--- 
+title: resources
+layout: default
+parent: azure-overview
+---
+
+# Resources
+
 ## App Registration
 
 App Registration is the process of registering applications with Microsoft Entra ID to enable authentication and authorization services.

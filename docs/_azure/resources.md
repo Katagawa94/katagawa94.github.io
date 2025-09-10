@@ -1,7 +1,6 @@
 --- 
-title: resources
+title: Resources
 layout: default
-parent: azure-overview
 ---
 
 # Resources

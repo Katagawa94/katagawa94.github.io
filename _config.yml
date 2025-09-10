@@ -3,6 +3,16 @@ description: A sick template. wow.
 theme: just-the-docs
 logo: "/assets/images/water.png"
 
+collections:
+  azure:
+    output: true
+
+just_the_docs:
+  collections:
+    azure:
+      name: Azure
+      nav_fold: true
+
 favicon_ico: "/assets/images/favicon.ico"
 color_scheme: light
 

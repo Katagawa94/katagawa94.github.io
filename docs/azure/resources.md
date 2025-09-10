@@ -1,6 +1,7 @@
 --- 
 title: Resources
 layout: default
+parent: Azure
 ---
 
 # Resources

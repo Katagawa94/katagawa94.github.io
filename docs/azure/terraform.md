@@ -1,6 +1,7 @@
 --- 
 title: Terraform
 layout: default
+parent: Azure
 ---
 
 # Terraform

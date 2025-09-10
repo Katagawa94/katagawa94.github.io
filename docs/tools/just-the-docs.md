@@ -18,90 +18,15 @@ Use this when the theme is installed as a Ruby gem.
 
 ```yaml
 # _config.yml
-title: My Docs
-description: Product documentation
-url: https://example.com
-baseurl: /docs # or "" when deployed at the site root
-permalink: pretty
-
-# Use the gem-based theme
+title: Documentation
+description: A documentation Page
 theme: just-the-docs
+logo: "/assets/images/example.png"
 
-# Jekyll plugins (add others as needed)
-plugins:
-  - jekyll-seo-tag
-
-# Just the Docs settings
-logo: /assets/images/logo.png
-# If your favicon is at /favicon.ico you can omit favicon_ico
-favicon_ico: /assets/images/favicon.ico
-
-# Enable the sidebar navigation globally
-nav_enabled: true
-
-# Light (default) or dark, or a custom scheme defined in _sass/color_schemes/
+favicon_ico: "/assets/images/favicon.ico"
 color_scheme: light
 
-# Built-in search
-search_enabled: true
-search:
-  heading_level: 2
-  previews: 3
-  preview_words_before: 5
-  preview_words_after: 10
-  # Default tokenizer splits on whitespace and hyphens; this supports hyphenated terms
-  tokenizer_separator: /[\s\/-]+/
-  rel_url: true
-  button: false
-  focus_shortcut_key: "k"
-
-# Upper-right aux links
-aux_links:
-  "Project on GitHub":
-    - "//github.com/acme/project"
-aux_links_new_tab: false
-
-# External links in the left navigation (after pages, before collections)
-nav_external_links:
-  - title: Company Website
-    url: https://www.example.com
-    hide_icon: false
-    opens_in_new_tab: false
-
-# Heading anchor links on hover
-heading_anchors: true
-
-# Footer controls (footer_content is deprecated; prefer _includes/footer_custom.html)
-footer_content: ""
-last_edit_timestamp: true
-last_edit_time_format: "%b %e %Y at %I:%M %p"
-gh_edit_link: true
-gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/acme/project"
-gh_edit_branch: "main"
-# gh_edit_source: docs
-gh_edit_view_mode: "tree"
-
-# Google Analytics (supports UA and GA4; comma-separate to track both)
-ga_tracking: "G-XXXXXXX"
-ga_tracking_anonymize_ip: true
-
-# Mermaid diagrams (version from jsdelivr, or provide a local 'path')
-mermaid:
-  version: "9.1.3"
-
-# Collections: group documents in the nav and search
-collections:
-  guides:
-    output: true
-    permalink: "/:collection/:path/"
-just_the_docs:
-  collections:
-    guides:
-      name: Guides
-      nav_exclude: false
-      nav_fold: true
-      search_exclude: false
+url: https://example.github.io
 ```
 
 ## Gemfile example
@@ -136,11 +61,6 @@ Organize content and assets as follows; collections must live in underscored dir
 ├── _config.yml
 ├── _includes/
 │   └── (content)
-├── _sass/
-│   ├── custom/
-│   │   └── setup.scss
-│   └── color_schemes/
-│       └── my-scheme.scss
 ├── assets/
 │   ├── images/
 │   │   └── (content)

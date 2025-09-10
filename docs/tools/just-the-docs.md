@@ -1,6 +1,7 @@
 ---
 title: Just the docs
 layout: default
+parent: Tools
 ---
 
 # Configuring Just the Docs (Jekyll)

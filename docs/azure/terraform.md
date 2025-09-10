@@ -42,14 +42,13 @@ CDKTF extends Terraform by allowing you to define infrastructure using familiar 
 
 ### Code example
 
-The following code generates a terraform config to create a new resource group.
+The following code generates a terraform configuration to create a new resource group.
 
 ```typescript
 (imports)
 
 const tenantId = "TENANT_ID";
 const subscriptionId = "SUBSCRIPTION_ID";
-
 const projectName = "PROJECT_NAME"
 const location = "LOCATION"
 const environment = 'ENVIRONMENT'
@@ -101,6 +100,4 @@ class BootstrapStack extends TerraformStack {
 const app = new App();
 new BootstrapStack(app, "bootstrap")
 app.synth();
-
-
 ```

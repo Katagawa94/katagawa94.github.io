@@ -1,6 +1,7 @@
 --- 
 title: Azure
 layout: default
+nav_order: 3
 ---
 
 # Azure

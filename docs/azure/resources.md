@@ -25,18 +25,17 @@ App Registration is the process of registering applications with Microsoft Entra
 
 Azure Key Vault is a cloud service that provides secure storage and management of secrets, keys, and certificates.
 
-### Core Capabilities:
 
-#### Secrets Management
+### Secrets Management
 - Store and manage passwords, connection strings, and API keys
 - Version control for secrets with automatic rotation support
 - Access logging and monitoring for compliance
 
-#### Key Management
+### Key Management
 - Create and manage cryptographic keys
 - Key rotation and lifecycle management
 
-#### Certificate Management
+### Certificate Management
 - Store and manage SSL/TLS certificates
 - Automatic certificate renewal from supported Certificate Authorities
 - Integration with Azure services for automatic certificate deployment
@@ -52,15 +51,13 @@ Azure Key Vault is a cloud service that provides secure storage and management o
 
 Single Page Applications are web applications that load a single HTML page and dynamically update content as users interact with the application, providing a desktop-like experience.
 
-### Authentication in Azure:
-
-#### Configuration Requirements:
+### Configuration Requirements:
 - App Registration configured for SPA platform
 - Redirect URIs configured for authentication responses
 - CORS settings for cross-origin requests
 - Appropriate API permissions and scopes
 
-#### Implementation Steps:
+### Implementation Steps:
 1. Create App Registration in Microsoft Entra ID
 2. Configure SPA platform settings and redirect URIs
 4. Implement authentication flow in application

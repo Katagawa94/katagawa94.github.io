@@ -20,7 +20,7 @@ Welcome to our engineering handbook. This space explains how we work, how we shi
 **Azure:**
 - Our cloud platform for running apps and services, storage, networking, and secrets.
 - Identity and access via Microsoft Entra ID; least-privilege roles apply to users, service principals, and pipelines.
-- Infrastructure as Code with Terraform/CDK for Terraform (CDKTF) defines environments and promotes changes through dev → stage → prod.
+- Infrastructure as Code with Terraform/CDK for Terraform (CDKTF) defines environments.
 
 **Datadog:**
 - Unified observability for logs, metrics, traces, and dashboards.

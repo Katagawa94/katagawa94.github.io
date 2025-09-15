@@ -6,7 +6,7 @@ parent: Tools
 
 # Configuring Just the Docs (Jekyll)
 
-This guide shows how to configure the Just the Docs theme for Jekyll using a single site configuration and clear code examples. It includes both gem-based and remote theme setups, plus navigation, search, analytics, and UI customizations.
+This guide shows how to configure the Just the Docs theme for Jekyll using a single site configuration and clear code examples. It includes both gem-based and remote theme setups, plus navigation, search, analytics, and UI customizations. It is only needed when maintaining the documentation page.
 
 ## Quick start
 

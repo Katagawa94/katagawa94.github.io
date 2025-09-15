@@ -37,7 +37,7 @@ This creates:
   - Private key: id_ed25519
   - Public key: id_ed25519.pub
 
-> {.warning}
+> {: .warning}
 > The private key must remain secret; the public key is safe to share and upload to GitHub or other platforms.
 
 

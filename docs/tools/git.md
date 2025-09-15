@@ -118,12 +118,12 @@ git remote -v
 git status
 ```
 
-{: .note}
-- Make small, focused commits with clear, imperative messages.
-- Prefer present tense, concise subject line, optional body for context.
-- Group related changes; avoid mixing refactors with behavior changes.
-- Commit frequently during development; rebase/squash locally if needed before PR.
-- Optionally follow Conventional Commits (feat, fix, docs, refactor, test, chore).
+{: .dos}
+> - Make small, focused commits with clear, imperative messages.
+> - Prefer present tense, concise subject line, optional body for context.
+> - Group related changes; avoid mixing refactors with behavior changes.
+> - Commit frequently during development; rebase/squash locally if needed before PR.
+> - Optionally follow Conventional Commits (feat, fix, docs, refactor, test, chore).
 
 TODO: (chore:, wip:,  and so on)
 

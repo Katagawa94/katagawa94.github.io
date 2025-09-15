@@ -21,7 +21,7 @@ Terraform is an open-source Infrastructure as Code (IaC) tool that allows you to
 
 CDKTF extends Terraform by allowing you to define infrastructure using familiar programming languages instead of HCL.
 
-For further information read the chapter about the [CDKTF CLI](../tools/cdktf-cli.md).
+For further information read the chapter about the [CDKTF CLI](/docs/tools/cdktf-cli.md).
 
 ### Supported Languages:
 - TypeScript (preferred)

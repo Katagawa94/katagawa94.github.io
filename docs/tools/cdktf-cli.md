@@ -209,11 +209,3 @@ Read context in code:
 const location = this.node.tryGetContext("location") ?? "westeurope";
 const namePrefix = this.node.tryGetContext("namePrefix") ?? "app";
 ```
-
-## CI/CD tips
-- Use non-interactive flags:
-  - `cdktf diff` to validate the plan.
-  - `cdktf deploy --auto-approve` to apply.
-  - `cdktf destroy --auto-approve` for teardown jobs.
-- Cache the `imports` and `.terraform` directories to speed up builds.
-- Always run `cdktf get` after checking out the repo and before `synth/diff/deploy`.

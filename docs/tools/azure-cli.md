@@ -7,7 +7,8 @@ parent: Tools
 # Azure
 The Azure CLI is a cross‑platform command‑line tool for creating and managing Azure resources interactively or through scripts across Windows, Linux, and macOS, with options to run in Docker or Azure Cloud Shell.  The official documentation covers installation, command references, authentication, and tips for effective usage.  Before any operation, establishing an authenticated session with Microsoft Entra ID via az login is required.
 
-The official documentation can be found [here](https://learn.microsoft.com/de-de/cli/azure/?view=azure-cli-latest).
+{: .note}
+> The official documentation can be found [here](https://learn.microsoft.com/de-de/cli/azure/?view=azure-cli-latest).
 
 ## Installation
 

@@ -28,7 +28,7 @@ Welcome to our engineering handbook. This space explains how we work, how we shi
 
 ## Prerequisites
 
-Befor setting up for using the tools make sure to meet the most common requirements for them:
+Before setting up for using the tools make sure to meet the most common requirements for them:
 
 **Github license**
 

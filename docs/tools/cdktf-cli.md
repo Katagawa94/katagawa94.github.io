@@ -7,7 +7,8 @@ parent: Tools
 # Cloud Development Kit for Terraform (CDKTF)
 Cloud Development Kit for Terraform (CDKTF) allows you to use familiar programming languages to define and provision infrastructure. Supported languages are TypeScript, Python, Java, C#, and Go. CDKTF compiles your code into Terraform JSON, then uses the Terraform CLI to plan and apply changes. This lets you leverage Terraform’s ecosystem while writing infrastructure as code in a general-purpose language.
 
-The official documentation can be found [here](https://developer.hashicorp.com/terraform/cdktf).
+{: .note}
+> The official documentation can be found [here](https://developer.hashicorp.com/terraform/cdktf).
 
 ## Prerequisites
 - Node.js 18+ and npm or pnpm installed.

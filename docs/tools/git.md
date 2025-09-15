@@ -8,7 +8,8 @@ parent: Tools
 
 Git (Global information tracker, or Goddamn idiotic truckload of s**t - when it breaks) is a tool to help developing software by recording changes in files and therefor crucial for the process of continuous integration.
 
-A beginner friendly guide for Git can be found [here](https://www.git-help.com/).
+{: .note}
+> A beginner friendly guide for Git can be found [here](https://www.git-help.com/).
 
 ## Prerequisites 
 - A GitHub account & license.

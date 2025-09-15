@@ -37,21 +37,11 @@ Add the theme (gem-based) or plugins needed for remote themes and local preview.
 # Gemfile
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"        # or as required by the environment
+gem "jekyll", "~> 4.3"    
 gem "jekyll-seo-tag"
 
 ```
-
-## Local development
-
-Install dependencies and run a development server.
-
-```bash
-bundle install
-bundle exec jekyll serve
-# Open http://127.0.0.1:4000 (or http://localhost:4000)
-```
-
+S
 ## Project structure
 
 Organize content and assets as follows; collections must live in underscored directories (for example, _guides).

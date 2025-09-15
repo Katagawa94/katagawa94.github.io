@@ -12,3 +12,12 @@ callouts:
   warning:
     title: Warning
     color: red
+  dos:
+    title: Dos
+    color: green
+  donts:
+    title: Don'ts
+    color: red
+  note:
+    title: note
+    color: blue

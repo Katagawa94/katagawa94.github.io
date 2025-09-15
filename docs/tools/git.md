@@ -10,8 +10,6 @@ Git (Global information tracker, or Goddamn idiotic truckload of s**t - when it 
 
 A beginner friendly guide for Git can be found [here](https://www.git-help.com/).
 
-Below is a concise markdown page with your requested headings, covering GitHub over SSH, key generation, safe practices, cloning, and basic Git usage with commit/PR strategies.
-
 ## Prerequisites 
 - A GitHub account & license.
 
@@ -37,8 +35,8 @@ This creates:
   - Private key: id_ed25519
   - Public key: id_ed25519.pub
 
-> {: .warning}
-> The private key must remain secret; the public key is safe to share and upload to GitHub or other platforms.
+{: .warning}
+The private key must remain secret; the public key is safe to share and upload to GitHub or other platforms.
 
 
 ### Adding keys to github and agent
@@ -67,12 +65,12 @@ Test the connection:
 ```
 ssh -T git@github.com
 ```
- Do:
+{: .dos}
 - Use a passphrase and the ssh-agent.
 - Back up your private key securely.
 - Consider separate keys for work and personal accounts.
 
-Don’t:
+{: .donts}
 - Share or commit your private key.
 - Use passwordless keys on shared devices.
 - Email keys or paste them in chats.
@@ -119,7 +117,7 @@ git remote -v
 git status
 ```
 
-### Commit strategy
+{: .note}
 - Make small, focused commits with clear, imperative messages.
 - Prefer present tense, concise subject line, optional body for context.
 - Group related changes; avoid mixing refactors with behavior changes.

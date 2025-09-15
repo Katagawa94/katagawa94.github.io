@@ -7,3 +7,8 @@ favicon_ico: "/assets/images/favicon.ico"
 color_scheme: light
 
 url: https://katagawa94.github.io
+
+callouts:
+  warning:
+    title: Warning
+    color: red

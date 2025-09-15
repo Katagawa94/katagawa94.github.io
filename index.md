@@ -4,44 +4,34 @@ layout: default
 nav_order: 1
 ---
 
-# Overview/ TODO
+# Hello World!
 
-## DevOps
-* Container
-* Continuous Integration
-* Continuous Delivery
-* Tracing
+Welcome to our engineering handbook. This space explains how we work, how we ship software, and the core tools that support our day-to-day: GitHub, Bitbucket, Azure, and Datadog.
 
-## Tools
-### General tools
-* Teams
-* Outlook
-* Interflex
-* Sharepoint
+## Our core tools
 
-### Developer tools
-* Jira
-    * Scrum
-        * Backlog
-        * Daily
-        * Review
-        * Retro
-* Confluence
-* Github
-    * Actions
-* Datadog
-* Bamboo
-* Bitbucket
-* Azure
-    * Tenants
-    * Subscriptions
-    * Groups
-    * Resources
-        * Terraform
-            * Cloud Development Kit Terraform (CDKTF)
-        * App Registration
-        * Key Vaults
-        * SPA
+**GitHub:** 
+- Primary home for source code, issues, pull requests, and code review.
 
-## Guidelines
-    
+**Bitbucket:**
+- Used for teams and repositories that still live in our Bitbucket workspace.
+- Migration or mirroring paths are documented for repos moving to GitHub.
+
+**Azure:**
+- Our cloud platform for running apps and services (App Service, Functions, AKS), storage, networking, and secrets (Key Vault).
+- Identity and access via Microsoft Entra ID; least-privilege roles apply to users, service principals, and pipelines.
+- Infrastructure as Code with Terraform/CDK for Terraform (CDKTF) defines environments and promotes changes through dev → stage → prod.
+
+**Datadog:**
+- Unified observability for logs, metrics, traces, and dashboards.
+- Dashboards are the system of record for service health during deploys and incidents.
+
+## Prerequisites
+
+Befor setting up for using the tools make sure to meet the most common requirements for them:
+
+**Github license**
+
+**Microsoft account**
+
+**Microsoft adm account**

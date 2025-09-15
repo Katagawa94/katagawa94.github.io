@@ -18,7 +18,7 @@ Welcome to our engineering handbook. This space explains how we work, how we shi
 - Migration or mirroring paths are documented for repos moving to GitHub.
 
 **Azure:**
-- Our cloud platform for running apps and services (App Service, Functions, AKS), storage, networking, and secrets (Key Vault).
+- Our cloud platform for running apps and services, storage, networking, and secrets.
 - Identity and access via Microsoft Entra ID; least-privilege roles apply to users, service principals, and pipelines.
 - Infrastructure as Code with Terraform/CDK for Terraform (CDKTF) defines environments and promotes changes through dev → stage → prod.
 

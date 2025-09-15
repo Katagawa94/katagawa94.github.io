@@ -33,9 +33,9 @@ Verification and subscription context:
 - Show current account and subscription: `az account show`.
 - List subscriptions and pick one: `az account list` and `az account set --subscription "<SUBSCRIPTION_NAME_OR_ID>"`.
 
-### Tool integrations
+## Tool integrations
 - Terraform: The AzureRM provider supports authenticating via the Azure CLI session; first run az login (or service principal/managed identity variants) and Terraform will reuse the active credentials.
 - Static Web Apps CLI: Use swa login to authenticate and obtain a deployment token used by swa deploy for Azure Static Web Apps.[8][9]
 
-### Usage in COMPANY
+## Usage in COMPANY
 WIP

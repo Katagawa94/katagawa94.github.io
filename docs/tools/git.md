@@ -27,11 +27,12 @@ ssh -V
 If it's not available install it via your package manager (e.g., apt, dnf, pacman).
 
 ### Generating keys
-- Recommended algorithm: ed25519.
+Generate the keys:
 ```
 ssh-keygen -t ed25519 -C "your_email@example.com"
-
 ```
+Recommended algorithm: ed25519.
+
 This creates:
   - Private key: id_ed25519
   - Public key: id_ed25519.pub

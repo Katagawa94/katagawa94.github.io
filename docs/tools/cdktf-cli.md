@@ -35,7 +35,6 @@ Install the CLI locally so your project pins a known version.
 
 ```json
 {
-  (...),
   "devDependencies": {
     "@types/node": "^24.3.0",
     "cdktf-cli": "^0.21.0",
@@ -53,10 +52,9 @@ Use it by adding scripts:
 
 ```json
 {
-  (...),
   "scripts": {
     "cdktf": "cdktf",
-    "get": "cdktf get",s
+    "get": "cdktf get",
     "synth": "cdktf synth",
     "diff": "cdktf diff",
     "deploy": "cdktf deploy",
@@ -148,8 +146,7 @@ class BootstrapStack extends TerraformStack {
 
     makeAzurermBackend(this, id);
     makeAzurermProvider(this);
-
-    const resourceGroup = new ResourceGroup(this, "resourceGroup", {
+    new ResourceGroup(this, "resourceGroup", {
       name: resourceGroupName,
       location: location,
     });

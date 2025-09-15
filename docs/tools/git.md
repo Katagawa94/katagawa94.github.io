@@ -65,15 +65,16 @@ Test the connection:
 ```
 ssh -T git@github.com
 ```
+
 {: .dos}
-- Use a passphrase and the ssh-agent.
-- Back up your private key securely.
-- Consider separate keys for work and personal accounts.
+> - Use a passphrase and the ssh-agent.
+> - Back up your private key securely.
+> - Consider separate keys for work and personal accounts.
 
 {: .donts}
-- Share or commit your private key.
-- Use passwordless keys on shared devices.
-- Email keys or paste them in chats.
+> - Share or commit your private key.
+> - Use passwordless keys on shared devices.
+> - Email keys or paste them in chats.
 
 ## Git
 

@@ -2,6 +2,7 @@
 title: Azure
 layout: default
 parent: Services
+nav_order: 2
 ---
 
 # Azure

@@ -126,8 +126,8 @@ git status
 > - Commit frequently during development; rebase/squash locally if needed before PR.
 > - Optionally follow Conventional Commits (feat, fix, docs, refactor, test, chore).
 
-TODO: (chore:, wip:,  and so on)
+TODO: WIP
 
 ### PR strategy
 
-TODO
+TODO: WIP

@@ -1,7 +1,7 @@
 --- 
-title: Confluence
+title: Confluence WIP
 layout: default
-parent: Services
+parent: Services WIP
 ---
 
 WIP

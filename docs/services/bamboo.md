@@ -1,7 +1,7 @@
 --- 
-title: Bamboo
+title: Bamboo WIP
 layout: default
-parent: Services
+parent: Services WIP
 ---
 
 WIP

@@ -134,7 +134,7 @@ The job runs on **Ubuntu** and executes a sequence of steps:
 
 ### 4. Nothing to Release Check
 ```yaml
-- if: ${{ env.NEXT_RELEASE_VERSION == '' }}
+- if: env.NEXT_RELEASE_VERSION == ''
 ```
 - If no new version is determined, the pipeline fails early with a "Nothing to release" message.
 
@@ -170,7 +170,7 @@ The job runs on **Ubuntu** and executes a sequence of steps:
 
 ### 9. Release Published
 ```yaml
-- run: echo ${{ steps.semantic.outputs.new_release_version }} ...
+- run: echo steps.semantic.outputs.new_release_version...
 ```
 - Prints the new version and its components:
   - Full version (`X.Y.Z`)
@@ -186,7 +186,7 @@ The job runs on **Ubuntu** and executes a sequence of steps:
 
 ### 11. Prepare Released Version File
 ```yaml
-- run: echo ${{ steps.semantic.outputs.new_release_version }} > released-version.txt
+- run: echo steps.semantic.outputs.new_release_version > released-version.txt
 ```
 - Saves the released version number into a file (`released-version.txt`).
 

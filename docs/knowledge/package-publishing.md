@@ -99,4 +99,99 @@ TLDR: Its doing versioning by using [projen](https://github.com/projen/projen).
 {: .note}
 It seems rly good. 
 
-## 
+### Trigger
+- **on: workflow_dispatch (branches: master)** 
+  The workflow can only be triggered manually from GitHub Actions, and it will run only on the `master` branch.
+
+### Job: Release Swagger UI
+The job runs on **Ubuntu** and executes a sequence of steps:
+
+### 1. Checkout
+```yaml
+- uses: actions/checkout@v5
+```
+- Clones the repository at the `master` ref.
+- Uses `fetch-depth: 0` to fetch the full history (required for semantic-release).
+- Disables GitHub’s default persisted credentials to force using a custom token.
+
+### 2. Setup Node.js
+```yaml
+- uses: actions/setup-node@v5
+```
+- Installs **Node.js version 22**.
+- Configures npm caching via `package-lock.json` for faster builds.
+
+### 3. Determine the next release version (Dry Run)
+```yaml
+- uses: cycjimmy/semantic-release-action@v4
+```
+- Runs semantic-release in **dry-run mode**, meaning it calculates the next version but doesn’t publish anything.
+- Uses extra plugins:
+  - `@semantic-release/git` (commits changelogs or version bumps)
+  - `@semantic-release/exec` (possible user-defined commands).
+- Requires `GITHUB_TOKEN` and `NPM_TOKEN` for authentication.
+- The result is stored in the environment (`NEXT_RELEASE_VERSION`).
+
+### 4. Nothing to Release Check
+```yaml
+- if: ${{ env.NEXT_RELEASE_VERSION == '' }}
+```
+- If no new version is determined, the pipeline fails early with a "Nothing to release" message.
+
+### 5. Install Dependencies
+```yaml
+- run: npm ci
+```
+- Installs npm dependencies using a clean and deterministic install.
+
+### 6. Prepare for Release
+```yaml
+- run: npm run test && npm run build
+```
+- Exports the calculated release version as `REACT_APP_VERSION`.
+- Runs tests and builds the app before publishing.
+
+### 7. Semantic Release (Actual Publish)
+```yaml
+- uses: cycjimmy/semantic-release-action@v4
+```
+- Executes semantic-release in **real mode**—this time it:
+  - Publishes the package to npm.
+  - Creates a GitHub release.
+  - Updates tags (+ changelog if configured).
+- Uses `@semantic-release/git` to push version changes back into the repo.
+- Publishes only if there are changes matching semantic commit conventions.
+
+### 8. Release Failed
+```yaml
+- if: steps.semantic.outputs.new_release_published == 'false'
+```
+- If semantic-release determines no new release was published, this step sets the workflow to failed.
+
+### 9. Release Published
+```yaml
+- run: echo ${{ steps.semantic.outputs.new_release_version }} ...
+```
+- Prints the new version and its components:
+  - Full version (`X.Y.Z`)
+  - Major number
+  - Minor number
+  - Patch number
+
+### 10. Upload Build Artifacts
+```yaml
+- uses: actions/upload-artifact@v4
+```
+- Uploads the generated `dist` build folder, making build artifacts available for later download.
+
+### 11. Prepare Released Version File
+```yaml
+- run: echo ${{ steps.semantic.outputs.new_release_version }} > released-version.txt
+```
+- Saves the released version number into a file (`released-version.txt`).
+
+### 12. Upload Released Version
+```yaml
+- uses: actions/upload-artifact@v4
+```
+- Uploads `released-version.txt` as an artifact with **1-day retention**—useful for downstream workflows to know the released version.

@@ -1,7 +1,7 @@
 ---
 title: Github CLI WIP
 layout: default
-parent: Tools
+parent: Tools WIP
 ---
 
 WIP

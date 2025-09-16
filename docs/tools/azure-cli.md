@@ -1,7 +1,7 @@
 ---
 title: Azure CLI
 layout: default
-parent: Tools
+parent: Tools WIP
 ---
 
 # Azure

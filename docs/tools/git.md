@@ -1,7 +1,7 @@
 ---
 title: Git
 layout: default
-parent: Tools
+parent: Tools WIP
 ---
 
 # Version control in COMPANY
